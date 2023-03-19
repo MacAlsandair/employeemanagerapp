@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from './employee';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { EmployeeService } from './employee.service';
 
 @Component({
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
       (response: Employee[]) => {
         this.employees = response;
       },
-      (error: HttpErrorReponse) => {
+      (error: HttpErrorResponse) => {
         alert(error.message);
       }
     );
