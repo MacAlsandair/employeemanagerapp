@@ -16,4 +16,4 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-//test on jenkins-github compatibility 3
+//test on jenkins-github compatibility 4
