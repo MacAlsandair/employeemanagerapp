@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
   }
 
   public onAddEmployee(addForm: NgForm): void {
-
+    this.employeeService.addEmployee(addForm.value)
   }
 
   public onOpenModal(employee: Employee | null, mode: string): void {
