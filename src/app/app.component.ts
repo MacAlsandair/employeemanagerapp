@@ -36,9 +36,11 @@ export class AppComponent implements OnInit {
       (response: Employee) => {
         console.log(response);
         this.getEmployees();
+        addForm.reset();
       },
       (error: HttpErrorResponse) => {
         alert(error.message);
+        addForm.reset();
       }
     );
   }
