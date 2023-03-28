@@ -11,6 +11,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
   public employees!: Employee[];
+  public editEmployee: Employee;
 
   constructor(private employeeService: EmployeeService) {}
 
